@@ -38,4 +38,15 @@ body{
      background-size: 500px 300px;
      background-repeat: no-repeat;
      background-position: right;
+     display: flex;
+     align-items: center;
+     background-color: #1d252c;
+     color: white;
+     font-size: 28px;
+}
+.hero h1{
+     margin-left: 30px;
+}
+.hero strong{
+     color: #026fff;
 }
