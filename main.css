@@ -20,6 +20,9 @@ body{
      align-items: center;
      height: 90px;
 }
+.header div figure img{
+     cursor: pointer;
+}
 .header ul{
      display: flex;
      flex-direction: row;
@@ -30,6 +33,10 @@ body{
      list-style: none;
      font-size: 20px;
      margin-right: 25px;
+}
+.header a{
+     text-decoration: none;
+     color: white;
 }
 /* ---------------------------------Hero--------------------------------- */
 .hero{
