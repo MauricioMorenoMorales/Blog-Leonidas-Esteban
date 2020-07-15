@@ -11,6 +11,13 @@ body{
      margin: 0;
      margin: auto;
 }
+h2,
+h3,
+h4,
+h5,
+h6{
+     color: #026fff;
+}
 /* -------------------------------header------------------------------- */
 .header{
      background-color: #1d252c ;
@@ -19,6 +26,9 @@ body{
      color: white;
      align-items: center;
      height: 90px;
+}
+.header div figure img{
+     cursor: pointer;
 }
 .header ul{
      display: flex;
@@ -31,6 +41,10 @@ body{
      font-size: 20px;
      margin-right: 25px;
 }
+.header a{
+     text-decoration: none;
+     color: white;
+}
 /* ---------------------------------Hero--------------------------------- */
 .hero{
      height: 300px;
@@ -38,4 +52,36 @@ body{
      background-size: 500px 300px;
      background-repeat: no-repeat;
      background-position: right;
+     display: flex;
+     align-items: center;
+     background-color: #1d252c;
+     color: white;
+     font-size: 28px;
 }
+.hero h1{
+     margin-left: 30px;
+}
+.hero strong{
+     color: #026fff;
+}
+
+/* .------------------------------Portfolio.------------------------------ */
+
+.portfolio-projects{
+     display: flex;
+     border: #1d252c 1px solid;
+     border-radius: 40px;
+     height: 500px;
+}
+
+.portfolio-projects-content{
+     margin-left: 30px;
+     font-size: 20px;
+}
+.portfolio-image{
+     width: 500px;
+     margin-right: 50px;
+}
+
+
+
