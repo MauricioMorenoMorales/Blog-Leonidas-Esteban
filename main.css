@@ -9,7 +9,6 @@ azul claro: #026fff */
 body{
      max-width: 1100px;
      width: 100%;
-     margin: 0;
      margin: auto;
 }
 h2,
@@ -49,12 +48,13 @@ h6{
 /* ---------------------------------Hero--------------------------------- */
 .hero{
      height: 300px;
-     background-image: url('./images/hero.jpg');
+     /* background-image: url('./images/hero.jpg');
      background-size: 500px 300px;
      background-repeat: no-repeat;
-     background-position: right;
+     background-position: right; */
      display: flex;
      align-items: center;
+     justify-content: space-between;
      background-color: #1d252c;
      color: white;
      font-size: 28px;
@@ -64,6 +64,13 @@ h6{
 }
 .hero strong{
      color: #026fff;
+}
+.hero figure{
+     height: inherit;
+     margin: 0;
+}
+.hero figure img{
+     height: inherit;
 }
 
 /* .------------------------------Portfolio.------------------------------ */
@@ -155,4 +162,22 @@ h6{
      color: white;
      padding: 5px 40px;
      border-radius: 20px;
+}
+/*--------------------------------Credits--------------------------------*/
+.credits{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 30px;
+     background-color: #1d252c;
+     color: white;
+     font-weight: 700;
+}
+.credits-left img{
+     height: 50px;
+     width: auto;
+     margin-bottom: 10px;
+}
+.credits-right a{
+     color: white;
 }
