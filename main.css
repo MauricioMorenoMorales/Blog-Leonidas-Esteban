@@ -8,7 +8,7 @@ azul claro: #026fff */
 }
 body{
      max-width: 1100px;
-     width: 100%;
+     width: 100vw;
      margin: auto;
 }
 h2,
@@ -19,6 +19,9 @@ h6{
      color: #026fff;
 }
 /* -------------------------------header------------------------------- */
+.burger-button{
+     display: none;
+}
 .header{
      background-color: #1d252c ;
      display: flex;
@@ -230,5 +233,43 @@ h6{
 @media screen and (max-width: 470px){
      .contact{
           flex-direction: column;
+     }
+     .burger-button{
+          display: initial;
+          background-color: rgba(0, 0, 0, 0.5);
+          height: 50px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 40px;
+          position: fixed;
+          margin: 30px 0 0 10px;
+          z-index: 100;
+     }
+     .burger-button svg{
+          height: 40px;
+     }
+     .header div figure{
+          width: 100vw;
+     }
+     .header div figure img{
+          padding-left: 50px;
+          width: calc(100% - 50px);
+     }
+     .header ul{
+          display: none;
+     }
+     .header ul.header-ul{
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+          position: fixed;
+          background-color: #1d252c;
+          width: 100vw;
+          height: 100px;
+          justify-content: center;
+          align-items: center;
      }
 }
